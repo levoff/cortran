@@ -56,6 +56,16 @@
 
 # Implemented according to GOST 51794-2001
 
+# USAGE:
+    # 1. WGS-84 coordinates MUST be converted into SK-42 lat,lon coordinates before being converted into X,Y format
+    # 2. 'transform_latlon_wgs84_sk42' function converts WGS-84 to SK-42 lat,lon and vice versa
+    # 
+    # EXAMPLE 1: transform_latlon_wgs84_sk42(lat,lon, H, source='wgs84', target='sk42')
+    # Converts input lat,lon WGS-84 coordinates into SK-42 lat,lon coordinates
+    # 
+    # EXAMPLE 2: transform_latlon_wgs84_sk42(lat,lon, H, source='sk42', target='wgs84')
+    # Converts input lat,lon SK-42 coordinates into WGS-84 lat,lon coordinates
+
 
 from math import sin, cos, tan, pi
 
