@@ -54,6 +54,9 @@
 #       Add MGRS conversion
 
 
+# Implemented according to GOST 51794-2001
+
+
 from math import sin, cos, tan, pi
 
 
@@ -142,6 +145,8 @@ def transform_latlon_wgs84_sk42(lat,lon, H, source='wgs84', target='sk42'):
         return lat,lon
     else:
         return 0,0
+
+
 
 
 
