@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <ref id="paramMagDecl" param="a" default="15"/>
+    <ref id="paramY" param="y" default="-10"/>
+    </defs>
+    <rect x="1" y="1" width="199" height="199" fill="none" stroke="grey" stroke-width="1" />
+    <g stroke="black" stroke-width="1" stroke-linecap="round" font-family="Verdana" font-size="12" transform="translate(100)">
+        
+        <g id="Gridline">
+          <line x1="0" y1="200" x2="0" y2="30" transform="rotate(5 10 200)" />
+          <line x1="0" y1="30" x2="4" y2="23" transform="rotate(5 10 200)" />
+          <line x1="0" y1="30" x2="-4" y2="23" transform="rotate(5 10 200)" />
+        </g>
+        <path d="M 14.8,30.6 A 170.0,170.0 0 0,0 0.0,30.0 " stroke-dasharray="2,2" style="fill:none; stroke:blue; stroke-width:1"/>
+
+
+        <g id="True">
+          <line x1="0" y1="200" x2="0" y2="20"/>
+          <polygon points="10,1 4,19.8 19,7.8 1,7.8 16,19.8" fill="black" transform="translate(-10)"/>
+        </g>
+
+        <g id="Magnetic" transform="rotate(15 10 200)">
+            <polygon points="-3,10 0,0 3,10" fill="black" transform="translate(0 40)" />
+            <line x1="0" y1="200" x2="0" y2="50" />
+            <text x="3" y="80" transform="rotate(-15 3 80)">15°09´</text>
+        </g>
+        <path d="M 38.8,55.1 A 150.0,150.0 0 0,0 0.0,50.0 " stroke-dasharray="2,2" style="fill:none; stroke:red; stroke-width:1"/>
+
+    </g>
+</svg>
