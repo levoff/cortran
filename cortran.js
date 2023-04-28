@@ -168,7 +168,14 @@ function transform_latlon_wgs84_sk42(lat, lon, H, source='wgs84', target='sk42')
 
 }
 
-console.log(sk42xy_to_sk42latlon(4429609, 8500000));
-console.log(sk42latlon_to_sk42xy(40.0, 45.0));
-console.log(transform_latlon_wgs84_sk42(40.0, 45.0, 0, 'sk42', 'wgs84'));
+// console.log(sk42xy_to_sk42latlon(4429609, 8500000));
+// console.log(sk42latlon_to_sk42xy(40.0, 45.0));
+// console.log(transform_latlon_wgs84_sk42(40.0, 45.0, 0, 'sk42', 'wgs84'));
+
+
+export {
+    sk42xy_to_sk42latlon,
+    sk42latlon_to_sk42xy,
+    transform_latlon_wgs84_sk42
+};
 
